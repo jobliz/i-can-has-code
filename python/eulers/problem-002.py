@@ -11,8 +11,3 @@ while(n < 4000000):
 		total += n
 	
 print total
-
-
-    
-    
-    

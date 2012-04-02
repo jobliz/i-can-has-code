@@ -24,4 +24,3 @@ for c in combs:
 	if (ispal(mult)) and (mult > top):
 		top = mult
 		print c, mult
-		
