@@ -1,26 +1,6 @@
-def ispal(n):
-	s = str(n)
-	l = len(s)	
-
-	if (len(s) % 2 == 0):
-		h = l / 2
-	else:
-		h = (n - 1) / 2
-
-	d = s[:h]
-	i = s[-h:][::-1]
-
-	if d == i: return True	
-	return False
-
 from itertools import combinations
 
-nums  = range(100, 1000)
-combs = list(combinations(nums, 2))
+ispal = lambda n: str(n) == str(n)[::-1]    # palindrome check
+pairs = combinations(xrange(100, 1000), 2)  # three digit numbers in pairs
 
-top = 0
-for c in combs:
-	mult = c[0] * c[1]
-	if (ispal(mult)) and (mult > top):
-		top = mult
-		print c, mult
+print max([p[0]*p[1] for p in pairs if ispal(p[0]*p[1])])

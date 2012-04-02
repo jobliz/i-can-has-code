@@ -1,13 +1,16 @@
-# first attempt, years ago
+# generic fibonacci number generator
+def fib_gen():
+    a, b = 0, 1
+    while True:
+        a, b = b, a + b
+        yield a
 
-serie = [1, 1]
-total = 0
-n = 0
+# limited fibonacci generator using previous one
+def fib_limit(n):
+    fibs = fib_gen()
+    current = fibs.next()
+    while current < n:
+        yield current
+        current = fibs.next()
 
-while(n < 4000000):
-	n = serie[-1] + serie[-2]
-	serie.append(n)
-	if (n % 2 == 0):
-		total += n
-	
-print total
+print sum([ f for f in fib_limit(4000000) if f % 2 == 0 ])
