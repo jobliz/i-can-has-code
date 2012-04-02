@@ -5,7 +5,7 @@
 
 def erath(limit):
     check = lambda n: n % 2 != 0 and n % 3 != 0 and n % 5 != 0
-    sieve = [n for n in xrange(1, limit) if check(n)][1:]
+    sieve = [n for n in xrange(7, limit) if check(n)]
     primes = [2, 3, 5]
     
     while primes[-1] <= limit ** 0.5:
