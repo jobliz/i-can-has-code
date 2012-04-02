@@ -9,4 +9,3 @@ def digit_gen(s, n):
 mult = lambda x, y: x*y
 
 print max([reduce(mult, digits) for digits in digit_gen(numstring, 5)])
-

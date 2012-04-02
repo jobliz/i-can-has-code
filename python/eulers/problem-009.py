@@ -11,5 +11,3 @@ for comb in combinations(xrange(1, 1000), 2):
         if a + b + int(c) == 1000:
             print int(a * b * c)
             break
-
-

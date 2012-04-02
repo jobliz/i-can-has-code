@@ -28,4 +28,3 @@ def prime_facts(n):
     return factors
 
 print prime_facts(600851475143)[-1:][0]
- 
