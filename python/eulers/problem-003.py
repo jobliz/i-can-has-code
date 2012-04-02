@@ -1,9 +1,9 @@
 # check if number is prime
 def isprime(n):
-	for x in range(2, int(n**0.5)+1):
-		if n % x == 0:
-			return False
-	return True
+    for x in range(2, int(n**0.5)+1):
+        if n % x == 0:
+            return False
+    return True
 
 # prime number generator
 def prime_gen():
