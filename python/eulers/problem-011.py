@@ -14,7 +14,7 @@
 #  it just happened that the first one got lucky. It's incomplete, and I'm sure
 #  there is a general way to solve it, but I'm still fond of this approach =)
 #
-#  TODO: Find a general function to solve this class of problems
+#  TODO: Find a general function to solve this class of problems!
 
 base = [ int(n) for n in open('011_data.txt', 'r').read().split() ]
 hasindex = lambda lst, index: index <= len(lst) - 1
