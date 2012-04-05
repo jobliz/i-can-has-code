@@ -4,8 +4,8 @@
 #    * 3 rows up is -60 from current index
 #    * left and right are just -1 or +1 to each side
 #    * diagonals occur if a combination of vertical and horizontal happens,
-#      adding or substracting multiples of 20 for horizontal values
-#      and the number of steps for vertical values
+#      adding or substracting multiples of 20 for vertical values
+#      and the number of steps for horizontal values
 #
 #  This problem is still rather crude. I just made it more readable and
 #  substituted the fugly lhp (list has position) function with a nicer lambda
